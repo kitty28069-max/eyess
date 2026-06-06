@@ -7,7 +7,7 @@
     <!-- 引入 Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- 引入 Google Fonts (繁體中文與優雅英字) -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght=300;400;500;700&family=Playfair+Display:ital,wght=0,400;1,400&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Noto Sans TC', sans-serif;
@@ -58,9 +58,8 @@
                     <button onclick="switchPage('catalog')" class="bg-[#9A8174] text-white px-6 py-2.5 rounded-full text-sm font-medium tracking-wider shadow-sm hover:bg-[#856D61] hover:-translate-y-0.5 transition-all duration-300">瀏覽所有款式 →</button>
                 </div>
                 <!-- 右側主視覺配圖區域 -->
-               <div class="absolute right-0 bottom-0 top-0 w-1/2 hidden md:flex">
-    <img src="https://i.pinimg.com/1200x/e7/3b/39/e73b39a4d7c34466b6cc65ecf048e8b9.jpg" alt="Banner" class="w-full h-full object-cover">
-</div>
+                <div class="absolute right-0 bottom-0 top-0 w-1/2 hidden md:flex">
+                    <img src="https://i.pinimg.com/1200x/e7/3b/39/e73b39a4d7c34466b6cc65ecf048e8b9.jpg" alt="Banner" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>
@@ -120,8 +119,7 @@
                 <button type="submit" class="w-full bg-[#9A8174] text-white py-2.5 rounded-xl text-sm font-medium hover:bg-[#856D61] transition-all duration-300">送出許願</button>
             </form>
         </div>
-    </div>
-</div>
+    </div> <!-- 👈 修正：這才是正確讓 Page 1 首頁完美收尾的盒子，其他的雜亂標籤都被我移除了 -->
 
     <!-- ================= PAGE 2: 款式分類與品牌分析 ================= -->
     <div id="page-catalog" class="page-content hidden animate-fade-in">
@@ -138,12 +136,10 @@
                 <!-- 卡片 1: OLENS (韓國) -->
                 <div class="bg-white rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300 flex flex-col">
                     <!-- 模特兒戴隱眼配圖區域 -->
-                   <div class="h-52 relative overflow-hidden bg-stone-100">
-
-    <span class="absolute top-3 left-3 z-10 bg-[#9A8174] text-white text-xs px-2.5 py-1 rounded-full font-medium tracking-wider">韓國大勢款</span>
-    
-    <img src="https://i.pinimg.com/736x/57/8d/c0/578dc05a4594008f58813380ea6c7cb6.jpg" alt="OLENS" class="w-full h-full object-cover">
-</div>
+                    <div class="h-52 relative overflow-hidden bg-stone-100">
+                        <span class="absolute top-3 left-3 z-10 bg-[#9A8174] text-white text-xs px-2.5 py-1 rounded-full font-medium tracking-wider">韓國大勢款</span>
+                        <img src="https://i.pinimg.com/736x/57/8d/c0/578dc05a4594008f58813380ea6c7cb6.jpg" alt="OLENS" class="w-full h-full object-cover">
+                    </div>
                     <!-- 內容物 -->
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
@@ -174,12 +170,10 @@
                 <!-- 卡片 2: Hapa Kristin (韓國) -->
                 <div class="bg-white rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300 flex flex-col">
                     <!-- 圖片區 -->
-                   <div class="h-52 relative overflow-hidden bg-stone-100">
-
-    <span class="absolute top-3 left-3 z-10 bg-[#9A8174] text-white text-xs px-2.5 py-1 rounded-full font-medium tracking-wider">韓國大勢款</span>
-    
-    <img src="https://i.pinimg.com/1200x/34/10/2e/34102e8b59612e298546a8e82775a905.jpg" alt="OLENS" class="w-full h-full object-cover">
-</div>
+                    <div class="h-52 relative overflow-hidden bg-stone-100">
+                        <span class="absolute top-3 left-3 z-10 bg-[#698274] text-white text-xs px-2.5 py-1 rounded-full font-medium tracking-wider">SNS 熱搜爆款</span>
+                        <img src="https://i.pinimg.com/1200x/34/10/2e/34102e8b59612e298546a8e82775a905.jpg" alt="Hapa Kristin" class="w-full h-full object-cover">
+                    </div>
                     <!-- 內容物 -->
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
@@ -209,12 +203,10 @@
                 <!-- 卡片 3: Chu's me (日本) -->
                 <div class="bg-white rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300 flex flex-col">
                     <!-- 圖片區 -->
-                   <div class="h-52 relative overflow-hidden bg-stone-100">
-
-    <span class="absolute top-3 left-3 z-10 bg-[#9A8174] text-white text-xs px-2.5 py-1 rounded-full font-medium tracking-wider">韓國大勢款</span>
-    
-    <img src="https://i.pinimg.com/736x/c3/a0/74/c3a0742d06ce7c4924da1762b60d5d4d.jpg" alt="OLENS" class="w-full h-full object-cover">
-</div>
+                    <div class="h-52 relative overflow-hidden bg-stone-100">
+                        <span class="absolute top-3 left-3 z-10 bg-[#A48295] text-white text-xs px-2.5 py-1 rounded-full font-medium tracking-wider">日系櫻花妹最愛</span>
+                        <img src="https://i.pinimg.com/736x/c3/a0/74/c3a0742d06ce7c4924da1762b60d5d4d.jpg" alt="Chu's me" class="w-full h-full object-cover">
+                    </div>
                     <!-- 內容物 -->
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
@@ -256,9 +248,9 @@
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-stone-100 pb-6 gap-4">
                     <div class="flex items-center gap-4">
                         <!-- 隱眼小配圖縮圖 -->
-                       <div class="w-16 h-16 rounded-xl overflow-hidden scale-90">
-    <img src="https://i.pinimg.com/1200x/88/97/dc/8897dcea82c23687464eea80172f6cdf.jpg" class="w-full h-full object-cover">
-</div>
+                        <div class="w-16 h-16 rounded-xl overflow-hidden scale-90 flex-shrink-0">
+                            <img src="https://i.pinimg.com/1200x/88/97/dc/8897dcea82c23687464eea80172f6cdf.jpg" class="w-full h-full object-cover">
+                        </div>
                         <div>
                             <h4 class="font-bold text-stone-800 text-sm">OLENS - ViVi Ring Brown</h4>
                             <p class="text-stone-400 text-xs mt-0.5">度數: -2.50 / 數量: 1盒</p>
@@ -273,9 +265,9 @@
                 <!-- 商品 2 -->
                 <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-stone-100 pb-6 gap-4">
                     <div class="flex items-center gap-4">
-                      <div class="w-16 h-16 rounded-xl overflow-hidden scale-90">
-    <img src="https://i.pinimg.com/736x/26/d2/95/26d29568ba1a48a9ef52a58e92866a4b.jpg" class="w-full h-full object-cover">
-</div>
+                        <div class="w-16 h-16 rounded-xl overflow-hidden scale-90 flex-shrink-0">
+                            <img src="https://i.pinimg.com/736x/26/d2/95/26d29568ba1a48a9ef52a58e92866a4b.jpg" class="w-full h-full object-cover">
+                        </div>
                         <div>
                             <h4 class="font-bold text-stone-800 text-sm">Hapa Kristin - One & Only Kristin</h4>
                             <p class="text-stone-400 text-xs mt-0.5">度數: -3.00 / 數量: 1盒</p>
@@ -340,7 +332,7 @@
     <footer class="bg-stone-800 text-stone-400 text-xs py-8 mt-20 border-t border-stone-700">
         <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
             <p class="font-serif-eng text-stone-300 text-sm tracking-widest font-semibold">IrisLens Studio</p>
-            <p>警語：配戴一般隱形眼鏡須經眼科醫師驗光配鏡取得處方箋。本網站僅供品牌美學分析與學術分享。</p>
+            <p>警語：配戴一般隱形眼鏡須經眼科醫師驗光配鏡取得處方箋。本網站僅供 brand 美學分析與學術分享。</p>
             <p class="text-stone-500/80 pt-2">© 2026 IrisLens Studio. Designed for Elegance.</p>
         </div>
     </footer>
